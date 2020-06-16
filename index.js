@@ -121,7 +121,7 @@ function endGame() {
   clearInterval(gameInterval);
   ROCKS.splice(0);
   while (GAME.firstChild){
-    GAME.firstChild.remove()
+    GAME.removeChild(GAME.firstChild)
   }
 
 
