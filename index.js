@@ -119,10 +119,11 @@ function createRock(x) {
  */
 function endGame() {
   clearInterval(gameInterval);
-  ROCKS.splice(0);
-  while (GAME.firstChild){
-    GAME.removeChild(GAME.firstChild)
+  for (let item of ROCKS){
+    item.remove();
   }
+  ROCKS.splice(0);
+  
 
 
 
